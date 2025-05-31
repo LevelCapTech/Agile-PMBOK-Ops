@@ -45,7 +45,7 @@ sudo -u agile_pmbok git -C /opt/Agile-PMBOK-Ops init
 sudo -u agile_pmbok git -C /opt/Agile-PMBOK-Ops remote add origin git@github.com:LevelCapTech/Agile-PMBOK-Ops.git
 # sudo -u agile_pmbok git -C /opt/Agile-PMBOK-Ops switch -c main --track origin/main
 sudo -u agile_pmbok git -C /opt/Agile-PMBOK-Ops fetch --depth 1
-# リモートのmainブランチでまずはチェックスト
+# リモートのmainブランチでまずはチェックアウト
 sudo -u agile_pmbok git -C /opt/Agile-PMBOK-Ops checkout -f origin/main
 # mainブランチをローカルに作る場合
 sudo -u agile_pmbok git -C /opt/Agile-PMBOK-Ops switch -c main --track origin/main
