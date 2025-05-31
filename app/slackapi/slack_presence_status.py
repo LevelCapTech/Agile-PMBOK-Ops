@@ -23,7 +23,10 @@ def set_presence_away():
     }
     data = {"presence": "away"}
     response = requests.post(url, headers=headers, json=data)
-    print("setPresence:", response.json())
+    if response.ok and response.json().get("ok"):
+        print("setPresence succeeded:", response.json())
+    else:
+        raise Exception(f"Failed to set presence: {response.json()}")
 
 
 def set_custom_status():
