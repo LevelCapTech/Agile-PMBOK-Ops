@@ -1,9 +1,12 @@
 import os
 import requests
 
+class MissingEnvironmentVariableError(RuntimeError):
+    """Raised when a required environment variable is missing."""
+
 SLACK_TOKEN = os.environ.get("SLACK_USER_TOKEN")
 if not SLACK_TOKEN:
-    raise Exception("SLACK_USER_TOKEN 環境変数が設定されていません")
+    raise MissingEnvironmentVariableError("SLACK_USER_TOKEN 環境変数が設定されていません")
 
 
 def set_presence_away():
