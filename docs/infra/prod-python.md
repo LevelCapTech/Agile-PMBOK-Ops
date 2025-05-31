@@ -13,7 +13,7 @@
 which pip3
 sudo apt update
 sudo apt install -y python3-pip
-sudo apt install -y python3.12-venv
+sudo apt install -y python3-venv
 ```
 
 これで、システム全体に pip3（および /usr/bin/pip3） がインストールされます。
