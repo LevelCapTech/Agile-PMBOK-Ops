@@ -60,6 +60,7 @@ sudo -u agile_pmbok /bin/bash << 'EOF'
 cd /opt/Agile-PMBOK-Ops
 source venv/bin/activate
 pip install -r requirements.txt
+pip install --upgrade pip
 deactivate
 EOF
 ```
